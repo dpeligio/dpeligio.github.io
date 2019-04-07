@@ -620,6 +620,7 @@ a:hover, a:active {
     font-size: 72px;
     font-family: 'BeyondTheMountains';
     color: #fff;
+    text-shadow: #000 1px 0 10px; 
 }
 
 /*--------------------------------------------------------------
