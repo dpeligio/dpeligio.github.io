@@ -36,6 +36,7 @@
                     <div class="col-lg-6 flex align-items-center">
                         <div class="header-bar-text d-none d-lg-block">
                             <p>David Paul Ferrer</p>
+                            <p id="date_time"></p>
                         </div><!-- .header-bar-text -->
 
                         <div class="header-bar-email d-none d-lg-block">
@@ -278,9 +279,15 @@
     </div><!-- .footer-bar -->
 </footer><!-- .sit-footer -->
 
-<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-3.3.1.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>
 <script type='text/javascript' src='js/custom.js'></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.ajaxSetup({cache:false});
+        setInterval(function() {$('#date_time').load('http://hope.x10.mx/time.php');}, 1000);
+    });
+</script>
 
 </body>
 </html>
